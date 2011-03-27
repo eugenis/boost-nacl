@@ -77,6 +77,10 @@
 #define BOOST_HAS_UNISTD_H
 #include <boost/config/posix_features.hpp>
 
+#ifdef __native_client__
+#define O_LARGEFILE 0
+#endif
+
 #ifndef __GNUC__
 //
 // if the compiler is not gcc we still need to be able to parse
