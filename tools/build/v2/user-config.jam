@@ -42,7 +42,7 @@
 # using gcc ;
 
 # Configure specific gcc version, giving alternative name to use.
-using gcc : 4.4.3 : nacl64-g++ ;
+using gcc : 4.4.3 : x86_64-nacl-g++ ;
 
 
 # -------------------
